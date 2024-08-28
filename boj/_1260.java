@@ -57,12 +57,12 @@ public class _1260 {
             startPoint = queue.poll();
             System.out.print(startPoint + " ");
 
-        for (int i = 0; i <= n; i++) {
-            if (map[startPoint][i] == 1 && check[i] == 0) {
-                queue.add(i);
-                check[i] = 1;
+            for (int i = 0; i <= n; i++) {
+                if (map[startPoint][i] == 1 && check[i] == 0) {
+                    queue.add(i);
+                    check[i] = 1;
+                }
             }
-        }
         }
     }
 }

@@ -29,8 +29,8 @@ public class _1260 {
 
         dfs(n, map, v, check);
         System.out.println();
+        check = new int[n+1];
         bfs(n, map, v, check);
-        System.out.println();
 
         br.close();
     }
@@ -40,8 +40,6 @@ public class _1260 {
         System.out.print(startPoint + " ");
         for (int i = 0; i <= n; i++) {
             if (map[startPoint][i] == 1 && check[i] == 0) {
-                map[startPoint][i] = 0;
-                map[i][startPoint] = 0;
                 dfs(n, map, i, check);
             }
         }
